@@ -26,22 +26,22 @@ public class Exercise19 {
         System.out.println("Digite o valor do 3° Lado");
         c = input.nextInt();
 
-        if (a > (b + c) ){
-            if(a==b && b==c){
-                System.out.println("Seu triângulo é EQUILÁTERO");
+        if (a < (b + c) && (b < (a + c)) && (c < (a + b))){
+            if (a==b && b==c){
+                System.out.println("Seu Triângulo é EQUILÁTERO");
+            }else if (a==b){
+                System.out.println("Seu Triângulo é ISÓSCELES");
+            }else if(a==c){
+                System.out.println("Seu Triângulo é ISÓSCELES");
+            }else if(b==c){
+                System.out.println("Seu Triângulo é ISÓSCELES");
+            }else {
+                System.out.println("Seu Triângulo é ESCALENO");
             }
         }else{
-            if (a==b){
-                System.out.println("Seu triângulo é ISÓSCELES");
-            } else if (a==c){
-
-            } else if (b==c){
-
-            }
+            System.out.println("Você formou um triângulo Inválido!");
         }
-
-
-
-
     }
 }
+
+
