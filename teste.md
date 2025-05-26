@@ -1,15 +1,15 @@
 ```mermaid
 erDiagram
-    DEPARTAMENTO ||--o{ FUNCIONARIO : possui
+    DEPARTAMENTO ||--o{ FUNCIONARIO : "possui"
     DEPARTAMENTO {
         int ID_Departamento PK
-        varchar(100) Setor UNIQUE
+        varchar Setor UNIQUE
     }
     FUNCIONARIO {
         int ID_Funcionario PK
-        varchar(100) Nome
+        varchar Nome
         date Data_Nascimento
-        decimal(10,2) Salario
+        decimal Salario
         int ID_Departamento FK
     }
 ```
